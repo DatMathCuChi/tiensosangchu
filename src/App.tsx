@@ -73,34 +73,34 @@ export default function App() {
         <div className="absolute bottom-[20%] left-[10%] w-[500px] h-[500px] bg-purple-500/5 rounded-full blur-[120px]" />
       </div>
 
-      <div className="relative max-w-2xl mx-auto px-6 py-6 md:py-10">
+      <div className="relative max-w-2xl mx-auto px-6 py-4 md:py-6">
         {/* Header */}
-        <header className="mb-8 text-center relative">
+        <header className="mb-4 text-center relative">
           <motion.div 
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="inline-flex items-center justify-center p-4 mb-4 bg-cyber-dark border border-cyan-500/30 rounded-full shadow-[0_0_20px_rgba(6,182,212,0.2)]"
+            className="inline-flex items-center justify-center p-3 mb-3 bg-cyber-dark border border-cyan-500/30 rounded-full shadow-[0_0_20px_rgba(6,182,212,0.2)]"
           >
-            <Banknote className="w-8 h-8 text-cyan-400" />
+            <Banknote className="w-6 h-6 text-cyan-400" />
           </motion.div>
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-5xl font-display font-black tracking-[0.05em] text-white mb-3 uppercase cyber-glow"
+            className="text-3xl md:text-4xl font-display font-black tracking-[0.05em] text-white mb-2 uppercase cyber-glow"
           >
             TIỀN SỐ SANG CHỮ
           </motion.h1>
           <motion.div
             initial={{ width: 0 }}
-            animate={{ width: "100px" }}
-            className="h-1 bg-cyan-500 mx-auto mb-4 rounded-full"
+            animate={{ width: "80px" }}
+            className="h-1 bg-cyan-500 mx-auto mb-3 rounded-full"
           />
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-cyan-500/60 font-medium text-[10px] uppercase tracking-[0.15em] mb-4"
+            className="text-cyan-500/60 font-medium text-[9px] uppercase tracking-[0.15em] mb-2"
           >
             Hệ Thống Chuyển Đổi để điền mẫu tính tiền khuyết tật cho nhanh..hehe
           </motion.p>
@@ -108,27 +108,27 @@ export default function App() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.25 }}
-            className="text-cyan-400 font-bold text-sm tracking-[0.2em] uppercase"
+            className="text-cyan-400 font-bold text-xs tracking-[0.2em] uppercase"
           >
             Thầy Đạt Toán
           </motion.p>
         </header>
 
-        <main className="space-y-4">
+        <main className="space-y-3">
           {/* Main Card */}
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="bg-cyber-card backdrop-blur-xl rounded-lg p-6 md:p-8 border border-cyan-500/20 relative shadow-[0_0_50px_rgba(0,0,0,0.5)] overflow-hidden"
+            className="bg-cyber-card backdrop-blur-xl rounded-lg p-5 md:p-6 border border-cyan-500/20 relative shadow-[0_0_50px_rgba(0,0,0,0.5)] overflow-hidden"
           >
             {/* Cyber corner accents */}
-            <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-cyan-500" />
-            <div className="absolute top-0 right-0 w-8 h-8 border-t-2 border-r-2 border-cyan-500/30" />
-            <div className="absolute bottom-0 left-0 w-8 h-8 border-b-2 border-l-2 border-cyan-500/30" />
-            <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-cyan-500" />
+            <div className="absolute top-0 left-0 w-6 h-6 border-t-2 border-l-2 border-cyan-500" />
+            <div className="absolute top-0 right-0 w-6 h-6 border-t-2 border-r-2 border-cyan-500/30" />
+            <div className="absolute bottom-0 left-0 w-6 h-6 border-b-2 border-l-2 border-cyan-500/30" />
+            <div className="absolute bottom-0 right-0 w-6 h-6 border-b-2 border-r-2 border-cyan-500" />
 
-            <div className="space-y-6 relative z-10">
+            <div className="space-y-3 relative z-10">
               {/* Input Section */}
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
@@ -160,12 +160,12 @@ export default function App() {
               </div>
 
               {/* Transition Divider */}
-              <div className="flex items-center gap-4">
-                <div className="h-[1px] flex-1 bg-gradient-to-r from-transparent via-cyan-500/30 to-transparent" />
-                <div className="text-cyan-500/40 p-2 border border-cyan-500/20 rounded-full">
-                  <ArrowRightLeft className="w-4 h-4 rotate-90 md:rotate-0" />
+              <div className="flex items-center gap-2">
+                <div className="h-[1px] flex-1 bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent" />
+                <div className="text-cyan-500/30 p-1.5 border border-cyan-500/10 rounded-full">
+                  <ArrowRightLeft className="w-3 h-3 rotate-90 md:rotate-0" />
                 </div>
-                <div className="h-[1px] flex-1 bg-gradient-to-r from-transparent via-cyan-500/30 to-transparent" />
+                <div className="h-[1px] flex-1 bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent" />
               </div>
 
               {/* Result Section */}
@@ -299,8 +299,8 @@ export default function App() {
           </AnimatePresence>
         </main>
 
-        <footer className="mt-8 text-center">
-          <p className="text-[9px] font-mono text-cyan-900 uppercase tracking-[0.3em]">
+        <footer className="mt-4 text-center">
+          <p className="text-[8px] font-mono text-cyan-900 uppercase tracking-[0.3em]">
             THỜI_GIAN_HỆ_THỐNG::2077 // MÃ_HÓA::KÍCH_HOẠT
           </p>
         </footer>

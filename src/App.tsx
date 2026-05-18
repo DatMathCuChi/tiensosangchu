@@ -73,13 +73,13 @@ export default function App() {
         <div className="absolute bottom-[20%] left-[10%] w-[500px] h-[500px] bg-purple-500/5 rounded-full blur-[120px]" />
       </div>
 
-      <div className="relative max-w-2xl mx-auto px-6 py-12 md:py-20">
+      <div className="relative max-w-2xl mx-auto px-6 py-6 md:py-10">
         {/* Header */}
-        <header className="mb-12 text-center relative">
+        <header className="mb-8 text-center relative">
           <motion.div 
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="inline-flex items-center justify-center p-4 mb-6 bg-cyber-dark border border-cyan-500/30 rounded-full shadow-[0_0_20px_rgba(6,182,212,0.2)]"
+            className="inline-flex items-center justify-center p-4 mb-4 bg-cyber-dark border border-cyan-500/30 rounded-full shadow-[0_0_20px_rgba(6,182,212,0.2)]"
           >
             <Banknote className="w-8 h-8 text-cyan-400" />
           </motion.div>
@@ -114,13 +114,13 @@ export default function App() {
           </motion.p>
         </header>
 
-        <main className="space-y-6">
+        <main className="space-y-4">
           {/* Main Card */}
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="bg-cyber-card backdrop-blur-xl rounded-lg p-8 md:p-10 border border-cyan-500/20 relative shadow-[0_0_50px_rgba(0,0,0,0.5)] overflow-hidden"
+            className="bg-cyber-card backdrop-blur-xl rounded-lg p-6 md:p-8 border border-cyan-500/20 relative shadow-[0_0_50px_rgba(0,0,0,0.5)] overflow-hidden"
           >
             {/* Cyber corner accents */}
             <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-cyan-500" />
@@ -128,9 +128,9 @@ export default function App() {
             <div className="absolute bottom-0 left-0 w-8 h-8 border-b-2 border-l-2 border-cyan-500/30" />
             <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-cyan-500" />
 
-            <div className="space-y-10 relative z-10">
+            <div className="space-y-6 relative z-10">
               {/* Input Section */}
-              <div className="space-y-4">
+              <div className="space-y-3">
                 <div className="flex items-center justify-between">
                   <label htmlFor="amount" className="text-[10px] font-bold uppercase tracking-widest text-cyan-500/50">
                     Số_Tiền::Dạng_Số
@@ -146,7 +146,7 @@ export default function App() {
                     placeholder="1.203.405.678"
                     value={formatCurrency(input)}
                     onChange={handleInputChange}
-                    className="relative w-full bg-black/40 border border-cyan-500/30 focus:border-cyan-400 rounded-md px-6 py-6 text-4xl md:text-5xl font-display font-bold text-cyan-400 outline-none transition-all placeholder:text-cyan-900"
+                    className="relative w-full bg-black/40 border border-cyan-500/30 focus:border-cyan-400 rounded-md px-6 py-4 text-4xl md:text-5xl font-display font-bold text-cyan-400 outline-none transition-all placeholder:text-cyan-900"
                   />
                   {input && (
                     <button
@@ -169,7 +169,7 @@ export default function App() {
               </div>
 
               {/* Result Section */}
-              <div className="space-y-4">
+              <div className="space-y-2">
                 <div className="flex items-center justify-between">
                   <label className="text-[10px] font-bold uppercase tracking-widest text-cyan-500/50">
                     Kết_Quả::Dạng_Chữ
@@ -200,7 +200,7 @@ export default function App() {
                 </div>
                 
                 <div className={cn(
-                  "relative w-full bg-black/60 rounded-md p-8 min-h-[140px] flex items-center justify-center transition-all border border-cyan-500/10 group overflow-hidden",
+                  "relative w-full bg-black/60 rounded-md p-6 min-h-[100px] flex items-center justify-center transition-all border border-cyan-500/10 group overflow-hidden",
                   words ? "border-cyan-500/30" : "opacity-40"
                 )}>
                   {/* Scanning line effect */}
@@ -299,7 +299,7 @@ export default function App() {
           </AnimatePresence>
         </main>
 
-        <footer className="mt-16 text-center">
+        <footer className="mt-8 text-center">
           <p className="text-[9px] font-mono text-cyan-900 uppercase tracking-[0.3em]">
             THỜI_GIAN_HỆ_THỐNG::2077 // MÃ_HÓA::KÍCH_HOẠT
           </p>

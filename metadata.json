@@ -1,0 +1,8 @@
+{
+  "name": "Chuyển Tiền Số Thành Chữ",
+  "description": "Ứng dụng giúp chuyển đổi số tiền từ dạng số sang dạng chữ tiếng Việt một cách chính xác.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
